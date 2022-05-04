@@ -3,6 +3,11 @@
 body {
     padding: 0;
     margin: 0;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(250, 249, 249);
+    scroll-behavior: smooth;
     font-family: 'Josefin Sans', sans-serif;
+}
+
+.some {
+    background-image: url('./assests/food-delivey-background.jpg');
 }

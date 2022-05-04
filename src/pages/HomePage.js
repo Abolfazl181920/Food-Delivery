@@ -1,7 +1,9 @@
+import Header from 'home/Header'
+
 const HomePage = () => {
     return (
         <div>
-            This is Home Page
+            <Header />
         </div>
     )
 }
