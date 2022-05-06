@@ -2,7 +2,7 @@ const SignUp = () => {
     return (
         <>
             <div class="w-full mt-4 mobile:w-80 max-w-sm p-6 m-auto bg-white rounded-md shadow-md dark:bg-gray-800">
-            <h1 class="text-3xl font-semibold text-center text-gray-700 dark:text-white">Brand</h1>
+            <h1 class="text-3xl font-semibold text-center text-gray-700 dark:text-white">FoodDelivery</h1>
 
             <form class="mt-6">
                 <div>
