@@ -4,19 +4,26 @@ const SignUp = () => {
 
     const [ name, setName ] = useState('')
     const [ password, setPassword ] = useState('')
+    const [ submitted, setSubmitted ] = useState(false)
 
     const handleForm = (event) => {
         event.preventDefault()
 
-        // if () {}
+        if (name === '' || password === '' || name.length < 7 || password.length < 7) {
+            setSubmitted(false)
+        } else {
+            setSubmitted(true)
+        }
     }
 
     const handleName = (event) => {
         setName(event.target.value)
+        setSubmitted(false)
     }
 
     const handlePassword = (event) => {
         setPassword(event.target.value)
+        setSubmitted(false)
     }
 
     return (
