@@ -4,6 +4,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 import App from 'App'
 import FoodsPage from 'pages/FoodsPage'
+import SignUp from './register/SignUp'
+import SignIn from './register/SignIn'
 
 import './App.css'
 import './index.css'
@@ -14,6 +16,7 @@ root.render(
     <Routes>
       <Route path='/' element={ <App /> } />
       <Route path='foods' element={ <FoodsPage /> } />
+      <Route path='registration' element={ <SignUp /> } />
     </Routes>
   </Router>
 )
