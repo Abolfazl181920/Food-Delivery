@@ -16,7 +16,8 @@ root.render(
     <Routes>
       <Route path='/' element={ <App /> } />
       <Route path='foods' element={ <FoodsPage /> } />
-      <Route path='registration' element={ <SignUp /> } />
+      <Route path='registration/signup' element={ <SignUp /> } />
+      <Route path='registration/signin' element={ <SignUp /> } />
     </Routes>
   </Router>
 )
