@@ -10,7 +10,7 @@ const Error = () => {
         <div className="px-4 py-2 -mx-3">
             <div className="mx-3">
                 <span className="font-semibold text-red-500 dark:text-red-400">Error</span>
-                <p className="text-sm text-gray-600 dark:text-gray-200">Your email is already used!</p>
+                <p className="text-sm text-gray-600 dark:text-gray-200">Your registration is failed!</p>
             </div>
         </div>
     </div>
