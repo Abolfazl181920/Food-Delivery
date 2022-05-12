@@ -22,7 +22,8 @@ const SignUp = () => {
         } else {
             setSubmitted(true)
             localStorage.setItem('name', JSON.stringify(name))
-            // navigate("/registration/signin")
+            localStorage.setItem('password', JSON.stringify(password))
+            navigate("/registration/signin")
         }
     }
 
