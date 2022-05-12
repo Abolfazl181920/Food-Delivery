@@ -1,11 +1,15 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
+import Error from './messages/Error'
+import Success from './messages/Success'
+
 const SignUp = () => {
 
     const [ name, setName ] = useState('')
     const [ password, setPassword ] = useState('')
     const [ submitted, setSubmitted ] = useState(false)
+    const [ error, setError ] = useState(true)
 
     const navigate = useNavigate()
 
@@ -13,26 +17,27 @@ const SignUp = () => {
         event.preventDefault()
 
         if (name === '' || password === '' || name.length < 7 || password.length < 7) {
-            setSubmitted(false)
+            setSubmitted(true)
+            setError(false)
         } else {
             setSubmitted(true)
-            alert('true')
             navigate("/registration/signin")
         }
     }
 
     const handleName = (event) => {
         setName(event.target.value)
-        setSubmitted(false)
     }
 
     const handlePassword = (event) => {
         setPassword(event.target.value)
-        setSubmitted(false)
     }
 
     return (
         <>
+            {
+                submitted ? (error ? <Success /> : <Error />) : null
+            }
             <div className="w-full mt-10 mobile:w-80 max-w-sm p-6 m-auto bg-white rounded-md shadow-md dark:bg-gray-800">
             <h1 className="text-3xl font-semibold text-center text-gray-700 dark:text-white">FoodDelivery</h1>
 
@@ -60,7 +65,7 @@ const SignUp = () => {
 
                 <div className="mt-6">
                     <button
-                        onClick={handleForm}
+                        onClick={(event) => handleForm(event)}
                         className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-gray-700 rounded-md hover:bg-gray-600 focus:outline-none focus:bg-gray-600">
                         SignUp
                     </button>
