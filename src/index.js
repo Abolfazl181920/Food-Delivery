@@ -6,6 +6,7 @@ import App from 'App'
 import FoodsPage from 'pages/FoodsPage'
 import SignUp from './register/SignUp'
 import SignIn from './register/SignIn'
+import Error404 from './404/Error404'
 
 import './App.css'
 import './index.css'
@@ -18,6 +19,7 @@ root.render(
       <Route path='foods' element={ <FoodsPage /> } />
       <Route path='registration/signup' element={ <SignUp /> } />
       <Route path='registration/signin' element={ <SignIn /> } />
+      <Route path='*' element={ <Error404 /> } />
     </Routes>
   </Router>
 )
