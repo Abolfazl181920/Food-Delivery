@@ -1,7 +1,9 @@
+import Index from 'food/Index'
+
 const FoodsPage = () => {
     return (
         <div>
-            This is FoodsPage
+            <Index />
         </div>
     )
 }
