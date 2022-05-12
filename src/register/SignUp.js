@@ -21,7 +21,8 @@ const SignUp = () => {
             setError(false)
         } else {
             setSubmitted(true)
-            navigate("/registration/signin")
+            localStorage.setItem('name', JSON.stringify(name))
+            // navigate("/registration/signin")
         }
     }
 
