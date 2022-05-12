@@ -1,10 +1,13 @@
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const SignUp = () => {
 
     const [ name, setName ] = useState('')
     const [ password, setPassword ] = useState('')
     const [ submitted, setSubmitted ] = useState(false)
+
+    const navigate = useNavigate()
 
     const handleForm = (event) => {
         event.preventDefault()
@@ -13,6 +16,8 @@ const SignUp = () => {
             setSubmitted(false)
         } else {
             setSubmitted(true)
+            alert('true')
+            navigate("/registration/signin")
         }
     }
 
