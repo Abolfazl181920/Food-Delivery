@@ -1,4 +1,4 @@
-const Items = ({ name, type, img, price }) => {
+const Items = ({ name, type, price }) => {
     return (
         <div className="h-72 w-full bg-gray-500">
             <h4> {name} </h4>
