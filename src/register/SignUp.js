@@ -45,7 +45,7 @@ const SignUp = () => {
 
             <form className="mt-6">
                 <div>
-                    <label for="username" className="block text-sm text-gray-800 dark:text-gray-200">Username</label>
+                    <label htmlFor="username" className="block text-sm text-gray-800 dark:text-gray-200">Username</label>
                     <input type="text"
                         onChange={handleName}
                         value={name}
@@ -55,7 +55,7 @@ const SignUp = () => {
 
                 <div className="mt-4">
                     <div className="flex items-center justify-between">
-                        <label for="password" className="block text-sm text-gray-800 dark:text-gray-200">Password</label>
+                        <label htmlFor="password" className="block text-sm text-gray-800 dark:text-gray-200">Password</label>
                     </div>
 
                     <input type="password"
