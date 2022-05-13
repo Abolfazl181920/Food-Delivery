@@ -10,3 +10,6 @@ const Items = ({ name, type, price }) => {
 }
 
 export default Items
+
+
+// I must export default all images in a component and use it in json file
