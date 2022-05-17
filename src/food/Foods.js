@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import Items from 'food/Items'
-import GoldFood from './GoldFood'
+import BlueFood from './BlueFood'
 
 const Foods = () => {
 
@@ -36,7 +36,7 @@ const Foods = () => {
                     )
                 })
             }
-            <GoldFood />
+            <BlueFood />
         </div>
     )
 }
