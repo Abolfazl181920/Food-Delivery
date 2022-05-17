@@ -69,13 +69,6 @@
             "foodType": "Sanito", 
             "source": "https://www.pngitem.com/pimgs/m/401-4014214_we-re-used-to-hearing-that-the-kiwi.png",
             "price": 9
-        },
-        {
-            "id": "11",
-            "foodName": "Iranian Koofte", 
-            "foodType": "Sanito", 
-            "source": "https://images.squarespace-cdn.com/content/v1/5d76604a78b0547dd64d746a/1568755535087-H4LTI72VOOJADW2ZZ3C7/Product_Jackfruit_Balls.png?format=2500w",
-            "price": 11
         }
     ]
 }
