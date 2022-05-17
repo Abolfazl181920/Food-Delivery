@@ -29,7 +29,6 @@ const Foods = () => {
                         <Items
                             key={key}
                             name={item.foodName}
-                            type={item.foodType}
                             price={item.price}
                             img={item.source}
                         />

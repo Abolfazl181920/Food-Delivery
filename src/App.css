@@ -11,3 +11,7 @@ body {
 .some {
     background-image: url('./assests/food-delivey-background.jpg');
 }
+
+.shadow_css {
+    box-shadow: rgba(0, 0, 0, 0.10) 0px 25px 35px 0px;
+}

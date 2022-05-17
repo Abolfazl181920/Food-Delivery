@@ -4,7 +4,9 @@ module.exports = {
   ],
   theme: {
     screens: {
-      'mobile': '450px'
+      'mobile': '450px',
+      'tablet': '750px',
+      'smobile': '350px',
     },
   },
   plugins: [],
