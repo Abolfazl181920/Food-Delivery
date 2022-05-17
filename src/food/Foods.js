@@ -6,7 +6,7 @@ const Foods = () => {
     const [ foods, setFoods ] = useState([])
 
     const fetchData = () => {
-        fetch('http://localhost:3000/foods')
+        fetch('http://localhost:3001/foods')
 
         .then(function(response) {
             return response.json()
