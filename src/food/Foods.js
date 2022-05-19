@@ -5,6 +5,7 @@ import BlueFood from './BlueFood'
 const Foods = () => {
 
     const [ foods, setFoods ] = useState([])
+    const [ searchTerm, setSearchTerm ] = useState('')
 
     const fetchData = () => {
         fetch('http://localhost:3003/foods')
@@ -22,20 +23,27 @@ const Foods = () => {
         fetchData()
     }, [])
 
+    const handleSearch = (e) => {
+        setSearchTerm(e.target.value)
+        
+        const filterFoods = foods.filter(food => food.foodName.toLowerCase().includes(e.target.value.toLowerCase()))
+
+        setFoods(filterFoods)
+    }
+
     return (
         <div>
+            <input
+                type="text"
+                placeholder="search ..."
+                onChange={handleSearch}
+                value={searchTerm}
+            />
+
             {
-                foods.map((item, key) => {
-                    return(
-                        <Items
-                            key={key}
-                            name={item.foodName}
-                            price={item.price}
-                            img={item.source}
-                        />
-                    )
-                })
+                foods && foods.map(food => <Items />)
             }
+
             <BlueFood />
         </div>
     )
