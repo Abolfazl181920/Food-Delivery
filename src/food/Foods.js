@@ -49,6 +49,7 @@ const Foods = () => {
                             img={food.source}
                             price={food.price}
                             key={key.id}
+                            id={food.id}
                         />
                     </>
                 ))
