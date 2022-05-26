@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { Dispatch } from 'react'
 import Items from 'food/Items'
 import BlueFood from './BlueFood'
 
@@ -38,10 +39,20 @@ const Foods = () => {
                 placeholder="search ..."
                 onChange={handleSearch}
                 value={searchTerm}
+                className="flex ml-10 mt-10 border-2 border-gray-300 p-2 rounded-lg focus:border-0"
             />
 
             {
-                foods && foods.map(food => <Items />)
+                foods.length != 0 && foods.map((food, key) => (
+                    <>
+                        <Items
+                            name={food.foodName}
+                            img={food.source}
+                            price={food.price}
+                            key={key.id}
+                        />
+                    </>
+                ))
             }
 
             <BlueFood />
