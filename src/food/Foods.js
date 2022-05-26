@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react'
-import { Dispatch } from 'react'
 import Items from 'food/Items'
 import BlueFood from './BlueFood'
 
