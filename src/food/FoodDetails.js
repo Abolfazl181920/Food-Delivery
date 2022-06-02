@@ -20,8 +20,7 @@ const FoodDetails = () => {
 
     return (
         <div>
-            This is FoodDetails for each foods ... : {JSON.stringify(foodId)}
-            This is {JSON.stringify(data)}
+            {/* This is {JSON.stringify(data)} */}
         </div>
     )
 }
