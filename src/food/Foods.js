@@ -8,7 +8,7 @@ const Foods = () => {
     const [ searchTerm, setSearchTerm ] = useState('')
 
     const fetchData = () => {
-        fetch('http://localhost:3002/foods')
+        fetch('http://localhost:3003/foods')
 
         .then(function(response) {
             return response.json()

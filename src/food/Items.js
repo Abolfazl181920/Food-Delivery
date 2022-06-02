@@ -1,10 +1,6 @@
-import { Link, useParams } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 const Items = ({ name, img, price, id }) => {
-
-    let { foodId } = useParams()
-    console.log(foodId)
-
     return (
        <div className="inline-block">
             <div className="p-2 mt-10 mobile:ml-14 mobile:mt-4 items-center justify-center flex flex-wrap">
