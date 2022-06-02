@@ -16,10 +16,13 @@ root.render(
   <Router>
     <Routes>
       <Route path='/' element={ <App /> } />
-      <Route path='foods' element={ <FoodsPage /> } />
       <Route path='registration/signup' element={ <SignUp /> } />
       <Route path='registration/signin' element={ <SignIn /> } />
       <Route path='*' element={ <Error404 /> } />
+
+      <Route path='foods'>
+        <Route path=':foodId' element={ <FoodsPage /> } />
+      </Route>
     </Routes>
   </Router>
 )
