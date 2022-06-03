@@ -23,7 +23,6 @@ const FoodDetails = () => {
     return (
         <>
             <EachFood
-                id={data?.id}
                 name={data?.foodName}
                 source={data?.source}
                 price={data?.price}
