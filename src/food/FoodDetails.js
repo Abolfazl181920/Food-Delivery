@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 
+import EachFood from './EachFood'
+
 const FoodDetails = () => {
 
     const [ data, setData ] = useState()
@@ -19,9 +21,14 @@ const FoodDetails = () => {
     }, [ data ])
 
     return (
-        <div>
-            {/* This is {JSON.stringify(data)} */}
-        </div>
+        <>
+            <EachFood
+                id={data?.id}
+                name={data?.foodName}
+                source={data?.source}
+                price={data?.price}
+            />
+        </>
     )
 }
 
