@@ -7,10 +7,18 @@ const EachFood = ({ name, source, price }) => {
 
     const addFood = () => {
         setCount(prevState => prevState + 1)
+        if (count === 9) {
+            alert()
+            setCount(prevState => prevState -1)
+        }
     }
 
     const removeFood = () => {
         setCount(prevState => prevState - 1)
+        if (count <= 0) {
+            alert()
+            setCount(0)
+        }
     }
 
     return (
@@ -22,7 +30,7 @@ const EachFood = ({ name, source, price }) => {
                 <h3> {name} </h3>
                 <span className="text-yellow-500"> {price}$ </span>
             </div>
-            <div className="flex justify-center mt-10">
+            <div className="flex justify-center mt-4">
                 <button
                     onClick={addFood}
                     type="button"
@@ -37,7 +45,9 @@ const EachFood = ({ name, source, price }) => {
                 <Minuse />
                     Cancel
                 </button>
-                <span> {count} </span>
+            </div>
+            <div className="flex justify-center">
+                <span className="h-5 w-5 items-center text-center rounded mt-5 bg-yellow-500"> {count} </span>
             </div>
         </div>
     )
