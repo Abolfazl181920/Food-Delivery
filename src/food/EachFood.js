@@ -1,4 +1,4 @@
-import { Pluse, minuse } from '../icons/icons'
+import { Pluse, Minuse } from '../icons/icons'
 
 const EachFood = ({ id, name, source, price }) => {
     return (
@@ -12,7 +12,7 @@ const EachFood = ({ id, name, source, price }) => {
                     Add
                 </button>
                 <button type="button" className="text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-xl text-sm px-4 py-2 text-center inline-flex items-center mr-2">
-                <Pluse />
+                <Minuse />
                     Minuse
                 </button>
             </div>
