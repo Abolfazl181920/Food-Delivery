@@ -17,7 +17,7 @@ const EachFood = ({ name, source, price }) => {
             <div className="flex justify-center mt-10">
                 <button type="button" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-xl text-sm px-4 py-2 text-center inline-flex items-center mr-2">
                 <Pluse />
-                    Add
+                    Buy First
                 </button>
                 <button type="button" className="text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-xl text-sm px-4 py-2 text-center inline-flex items-center mr-2">
                 <Minuse />
