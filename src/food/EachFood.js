@@ -5,6 +5,14 @@ const EachFood = ({ name, source, price }) => {
 
     const [ count, setCount ] = useState(0)
 
+    const addFood = () => {
+        setCount(prevState => prevState + 1)
+    }
+
+    const removeFood = () => {
+        setCount(prevState => prevState - 1)
+    }
+
     return (
         <div>
             <div className="flex justify-center">
@@ -15,14 +23,21 @@ const EachFood = ({ name, source, price }) => {
                 <span className="text-yellow-500"> {price}$ </span>
             </div>
             <div className="flex justify-center mt-10">
-                <button type="button" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-xl text-sm px-4 py-2 text-center inline-flex items-center mr-2">
+                <button
+                    onClick={addFood}
+                    type="button"
+                    className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-xl text-sm px-4 py-2 text-center inline-flex items-center mr-2">
                 <Pluse />
                     Buy First
                 </button>
-                <button type="button" className="text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-xl text-sm px-4 py-2 text-center inline-flex items-center mr-2">
+                <button
+                    onClick={removeFood}
+                    type="button"
+                    className="text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-xl text-sm px-4 py-2 text-center inline-flex items-center mr-2">
                 <Minuse />
                     Cancel
                 </button>
+                <span> {count} </span>
             </div>
         </div>
     )
