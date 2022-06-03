@@ -30,7 +30,7 @@ const EachFood = ({ name, source, price }) => {
                 <h3> {name} </h3>
                 <span className="text-yellow-500 flex"> {price} <Euro /> </span>
             </div>
-            <div className="flex justify-center mt-4">
+            <div className="flex justify-center mt-8">
                 <button
                     onClick={addFood}
                     type="button"
@@ -47,7 +47,7 @@ const EachFood = ({ name, source, price }) => {
                 </button>
             </div>
             <div className="flex justify-center">
-                <span className="h-5 w-5 items-center text-center rounded mt-5 bg-yellow-500"> {count} </span>
+                <span className="h-5 w-5 items-center text-center rounded mt-3 bg-yellow-500"> {count} </span>
             </div>
         </div>
     )
