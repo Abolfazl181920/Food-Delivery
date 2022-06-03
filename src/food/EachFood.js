@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Pluse, Minuse } from '../icons/icons'
+import { Pluse, Minuse, Euro } from '../icons/icons'
 
 const EachFood = ({ name, source, price }) => {
 
@@ -28,7 +28,7 @@ const EachFood = ({ name, source, price }) => {
             </div>
             <div className="flex justify-center gap-4">
                 <h3> {name} </h3>
-                <span className="text-yellow-500"> {price}$ </span>
+                <span className="text-yellow-500 flex"> {price} <Euro /> </span>
             </div>
             <div className="flex justify-center mt-4">
                 <button
