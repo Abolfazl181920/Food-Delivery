@@ -18,7 +18,7 @@ const FoodDetails = () => {
         }
         fetchData()
 
-    }, [ data ])
+    }, [])
 
     return (
         <>
