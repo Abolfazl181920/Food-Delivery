@@ -9,7 +9,7 @@ const BlueFood = () => {
                     <img src={BlueFoodImg} alt="food-img" className="rounded-t-lg h-52 w-full cursor-pointer" />
                     <div className="p-7">
                         <h2 className="font-semibold mb-3 text-xl text-blue-800"> Iranian Koofte </h2>
-                        <Link to="/" className="text-yellow-300 italic hover:text-yellow-500 text-sm">Go Recipe 👉</Link>
+                        <Link to="/bluefoodGift" className="text-yellow-300 italic hover:text-yellow-500 text-sm">Go Recipe 👉</Link>
                         <span className="ml-16 text-sm text-yellow-300"> 900$ </span>
                     </div>
                 </div>
