@@ -37,7 +37,7 @@ const EachFood = ({ name, source, price }) => {
                     className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-xl text-sm px-4 py-2 text-center inline-flex items-center mr-2">
                 <Pluse />
                     {
-                        count === 0 ? 'Buy First' : count + ' Buy More'
+                        count === 0 ? 'Purchase First' : count + ' Purchase More'
                     }
                 </button>
                 <button
@@ -45,7 +45,7 @@ const EachFood = ({ name, source, price }) => {
                     type="button"
                     className="text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-xl text-sm px-4 py-2 text-center inline-flex items-center mr-2">
                 <Minuse />
-                    Cancel
+                    Cancel Purchase
                 </button>
             </div>
         </div>
