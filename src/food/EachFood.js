@@ -37,7 +37,7 @@ const EachFood = ({ name, source, price }) => {
         <div>
             <PriceBox finalPrice={newPrice} />
             <div className="flex justify-center">
-                <img className="w-96" src={source} alt="product" />
+                <img className="w-80" src={source} alt="product" />
             </div>
             <div className="flex justify-center gap-4">
                 <h3> {name} </h3>
