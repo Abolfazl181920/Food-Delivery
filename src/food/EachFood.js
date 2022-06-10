@@ -1,28 +1,41 @@
 import { useState } from 'react'
 import { Pluse, Minuse, Euro } from '../icons/icons'
 
+import PriceBox from './PriceBox'
+
 const EachFood = ({ name, source, price }) => {
 
     const [ count, setCount ] = useState(0)
+    const [ newPrice, setNewPrice ] = useState(0)
+    const [ countPurchase, setCountPurchase ] = useState()
+
+    let finalPrice = price
 
     const addFood = () => {
+
         setCount(prevState => prevState + 1)
+        setNewPrice(newPrice + finalPrice)
+
         if (count === 9) {
-            alert()
+            // alert() use TailwindCss components here(JSX)
             setCount(prevState => prevState -1)
         }
     }
 
     const removeFood = () => {
+        
         setCount(prevState => prevState - 1)
+        setNewPrice(newPrice - finalPrice)
+
         if (count <= 0) {
-            alert()
+            // alert() use TailwindCss components here(JSX)
             setCount(0)
         }
     }
 
     return (
         <div>
+            <PriceBox finalPrice={newPrice} />
             <div className="flex justify-center">
                 <img className="w-96" src={source} alt="product" />
             </div>

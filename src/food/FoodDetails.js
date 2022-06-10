@@ -11,7 +11,7 @@ const FoodDetails = () => {
     useEffect(() => {
         async function fetchData() {
             const fetchData = await fetch (
-                `http://localhost:3003/foods/${foodId}`
+                `http://localhost:3002/foods/${foodId}`
             )
             const response = await fetchData.json()
             setData(response)
